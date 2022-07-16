@@ -1,0 +1,94 @@
+
+/* utilities */
+body{
+    position: relative;
+}
+img{
+    filter: brightness(75%);
+}
+.block-content{
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+label{
+    font-size: 2rem;
+}
+
+/* ---- Home Page -----*/
+
+h1, .white-text, label, li, .helptext{
+    color: white;
+}
+h1.home{
+    font-size: 4.5rem;
+}
+p.home{
+    font-size: 2rem;
+}
+h3.home{
+    font-size: 3.5rem;
+}
+a.home{
+    font-size: 1.5rem;
+}
+
+/* ---- About Page -----*/
+h1.about{
+    font-size: 4.5rem;
+}
+p.about{
+    font-size: 2rem;
+}
+/* ---- Posts Page -----*/
+h1.lists{
+    font-size: 4.5rem;
+}
+/* ---- Edit Page -----*/
+div.row{
+    row-gap: 10px;
+}
+h1.detail{
+    font-size: 4.5rem;
+}
+h3.detail{
+    font-size: 3rem;
+    color: white;
+}
+p.detail{
+    font-size: 2rem;
+    color: white;
+}
+small.detail{
+    font-size: 1.5rem;
+    color: white;
+}
+a.detail{
+    font-size: 1rem;
+    color: white;
+}
+/* ---- Delete Page -----*/
+h1.delete{
+    font-size: 4.5rem;
+}
+p.delete{
+    font-size: 2rem;
+    color: white;
+}
+/* ---- Login Page -----*/
+h1.login{
+    font-size: 4.5rem;
+}
+/* ---- Logout Page -----*/
+h1.logout{
+    font-size: 4.5rem;
+}
+p.logout{
+    font-size: 2rem;
+    color: white;
+}
+a.logout{
+    font-size: 1.5rem;
+    color: white;
+}
