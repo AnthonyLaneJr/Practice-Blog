@@ -25,15 +25,24 @@
           <li class="nav-item">
             <a class="nav-link" href="{% url 'post_list' %}">Posts</a>
           </li>
+          {% if user.is_authenticated %}
           <li class="nav-item">
             <a class="nav-link" href="{% url 'post_new' %}">Create Post</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{% url 'login' %}">Login</a>
+            <a class="nav-link" href="{% url 'draft_post_list' %}">Drafts</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="{% url 'logout' %}">Logout</a>
           </li>
+          {% else %}
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'login' %}">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'signup' %}">Register</a>
+          </li>
+          {% endif %}
         </ul>
       </div>
     </div>

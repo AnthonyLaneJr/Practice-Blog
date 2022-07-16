@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Not Found{% endblock title %}
+
+{% block content %}
+<h1 class="logout">Not found</h1>
+<p class="logout">This is probably not the page you're looking for.</p>
+<a class="logout" href="{% url 'home' %}">Click Here</a> to go to the home page.
+{% endblock content %}
+
+

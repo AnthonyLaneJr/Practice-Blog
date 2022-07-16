@@ -9,8 +9,10 @@
 <br>
 <p class="detail">{{ post.body }}</p>
 <small class="detail">Created on: {{ post.created_on }} | By: {{ post.author }}</small>
+{% if user.is_authenticated %}
 <p class="detail">
     <a class="detail" href="{% url 'post_edit' post.id %}">Edit Post</a>  |  
     <a class="detail" href="{% url 'post_delete' post.id %}">Delete Post</a>
 </p>
+{% endif %}
 {% endblock content %}
